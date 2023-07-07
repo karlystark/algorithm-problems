@@ -1,7 +1,5 @@
-/** Tests if a word can be built with the given letters
- * Accepts two strings
- * Returns boolean
- * Constraints: Time complexity - O(w+k) */
+"use strict";
+/**Creates a frequency counter, accepts a string, returns an object */
 
 function frequencyCounter(word) {
   let freqCounter = {};
@@ -11,7 +9,10 @@ function frequencyCounter(word) {
   }
   return freqCounter;
 }
-
+/** Tests if a word can be built with the given letters
+ * Accepts two strings
+ * Returns boolean
+ * Constraints: Time complexity - O(w+k) */
 function canConstructWord(word, letters) {
 
   if (word.length > letters.length) {
